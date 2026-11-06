@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08090b">
+  <meta name="description" content="A private archive of two intersecting trajectories.">
+  <title>Archive — N.Z + O.M</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="wordmark" href="#top">O/A <span>·</span> VOL. 001</a>
+      <div class="topbar-meta"><span class="live-dot"></span> RECORD STATUS: ONGOING</div>
+      <a class="top-link" href="#checkpoints">EXPLORE THE RECORD..? <span>↘</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero section-frame" aria-labelledby="hero-title">
+        <div class="hero-topline mono">
+          <span>PRIVATE OBSERVATIONAL JOURNAL</span>
+          <span>EST. 25 SEP 2026 / 08:08:55 PDT</span>
+        </div>
+
+        <div class="hero-copy">
+          <p class="eyebrow">A RECORD OF US <span>—</span> FIG. 001</p>
+          <h1 id="hero-title">Natalie <i>&</i> Oliver</h1>
+          <p class="hero-subtitle">Doubt thou the stars are fire / Doubt that the sun doth move / Doubt truth to be a liar / But never doubt I love.” — William Shakespeare, Hamlet</p>
+        </div>
+
+        <div class="orbit-stage" aria-label="Two intersecting elliptical orbital paths">
+          <div class="orbit-note note-a"><span class="note-index">A / 01</span><span>INITIAL TRAJECTORY</span><b>e = 0.62</b></div>
+          <div class="orbit-note note-b"><span class="note-index">B / 02</span><span>INTERSECTING PATH</span><b>e = 0.48</b></div>
+          <svg class="orbit-art" viewBox="0 0 900 430" role="img" aria-label="Illustration of two intersecting elliptical orbits">
+            <defs>
+              <radialGradient id="coreGlow">
+                <stop offset="0" stop-color="#f5f2eb" stop-opacity=".9"/>
+                <stop offset=".22" stop-color="#c9c5bd" stop-opacity=".28"/>
+                <stop offset="1" stop-color="#c9c5bd" stop-opacity="0"/>
+              </radialGradient>
+              <filter id="softGlow"><feGaussianBlur stdDeviation="5"/></filter>
+            </defs>
+            <g class="grid-lines">
+              <path d="M450 20V410M40 215H860M245 40L655 390M655 40L245 390"/>
+              <circle cx="450" cy="215" r="150"/>
+              <circle cx="450" cy="215" r="95"/>
+              <circle cx="450" cy="215" r="42"/>
+            </g>
+            <g class="orbit orbit-one">
+              <ellipse cx="450" cy="215" rx="340" ry="112" transform="rotate(-17 450 215)"/>
+            </g>
+            <g class="orbit orbit-two">
+              <ellipse cx="450" cy="215" rx="295" ry="145" transform="rotate(31 450 215)"/>
+            </g>
+            <g class="orbit-ticks">
+              <path d="M450 54v-9m0 329v9M110 215h-9m689 0h9M450 65l-5-8m-1 316l5 8"/>
+              <path d="M190 111l-8-5m528 218l8 5M190 319l-8 5m528-218l8-5"/>
+            </g>
+            <circle cx="450" cy="215" r="66" fill="url(#coreGlow)" filter="url(#softGlow)"/>
+            <circle cx="450" cy="215" r="3.5" class="origin-point"/>
+            <circle cx="190" cy="142" r="5" class="body-point body-a"/>
+            <circle cx="640" cy="292" r="5" class="body-point body-b"/>
+            <circle cx="190" cy="142" r="13" class="point-halo"/>
+            <circle cx="640" cy="292" r="13" class="point-halo"/>
+            <g class="diagram-labels mono">
+              <text x="466" y="205">O</text>
+              <text x="202" y="132">A</text>
+              <text x="654" y="284">B</text>
+              <text x="465" y="57">+90°</text>
+              <text x="465" y="383">−90°</text>
+              <text x="98" y="232">−X</text>
+              <text x="780" y="232">+X</text>
+            </g>
+          </svg>
+          <div class="orbit-caption mono">FIG. 01 — THE GRAVITY BETWEEN YOU AND I</div>
+          <button class="annotation-trigger annotation-one" type="button" data-tip="An ellipse is defined by its semi-major axis, semi-minor axis, and eccentricity. These paths are symbolic, not a physical simulation.">i</button>
+          <button class="annotation-trigger annotation-two" type="button" data-tip="The central origin marks the shared frame of reference: a fixed point from which the record is measured.">i</button>
+        </div>
+
+        <div class="counter-block">
+          <div class="counter-heading mono"><span>ELAPSED TIME SINCE T₀</span><span class="counter-live"><i></i> LIVE MEASUREMENT</span></div>
+          <div class="counter" aria-live="off">
+            <div class="counter-unit"><span id="days">000</span><small>DAYS</small></div>
+            <span class="counter-colon">:</span>
+            <div class="counter-unit"><span id="hours">00</span><small>HOURS</small></div>
+            <span class="counter-colon">:</span>
+            <div class="counter-unit"><span id="minutes">00</span><small>MINUTES</small></div>
+            <span class="counter-colon">:</span>
+            <div class="counter-unit"><span id="seconds">00</span><small>SECONDS</small></div>
+          </div>
+          <div class="counter-foot mono"><span>T₀ = 2026.09.25 / 08:08:55 PDT</span><span id="total-hours">CALCULATING TOTAL HOURS…</span></div>
+        </div>
+
+        <a class="scroll-cue mono" href="#abstract"><span class="scroll-line"></span> SCROLL TO EXAMINE THE RECORD <span>↓</span></a>
+      </section>
+
+      <section class="abstract section-frame split-section" id="abstract">
+        <div class="section-index mono">00 <span>/</span> ABSTRACT</div>
+        <div class="abstract-content">
+          <p class="eyebrow">THE PREMISE</p>
+          <h2>Some things are easier to measure and code out than to explain in fornt of you</h2>
+          <div class="abstract-bottom">
+            <p>This is just a silly archive meant to track our milestones! (find the math references i sprinkled in)</p>
+            <div class="abstract-equation mono" aria-label="A symbolic equation">
+              <span>Δt = t − t₀</span>
+              <small>THE ONLY CONSTANT IS THAT IT CONTINUES</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="checkpoints section-frame" id="checkpoints">
+        <div class="checkpoints-heading">
+          <div>
+            <p class="eyebrow">A TIMELINE OF EVENT / 01—06</p>
+            <h2>Selected <i>checkpoints.</i></h2>
+          </div>
+          <p class="heading-aside mono">SELECT A FIGURE<br>TO OPEN ITS RECORD ↗</p>
+        </div>
+        <div class="checkpoint-grid" id="checkpoint-grid">
+          <!-- Populated by script.js -->
+        </div>
+      </section>
+
+      <section class="field-notes section-frame split-section">
+        <div class="section-index mono">07 <span>/</span> FIELD NOTES</div>
+        <div class="field-content">
+          <p class="eyebrow">MARGINALIA</p>
+          <h2>I love you so much!</h2>
+          <p class="field-copy">"You are part of my existence, part of myself. You have been in every line I have ever read." — Charles Dickens, A Tale of Two Cities</p>
+          <div class="field-note-rule"></div>
+          <p class="field-quote">"Every atom of your flesh is as dear to me as my own: in pain and sickness it would still be dear." — Charlotte Brontë, Jane Eyre</p>
+          <span class="mono field-caption">NOTE TO SELF / UNDATED</span>
+        </div>
+      </section>
+
+      <section class="trajectory section-frame">
+        <div class="trajectory-top mono"><span>FINAL PLATE / 008</span><span>PROJECTION: OPEN-ENDED</span></div>
+        <div class="trajectory-art">
+          <svg viewBox="0 0 700 250" role="img" aria-label="Two orbital paths continuing beyond the frame">
+            <ellipse cx="350" cy="125" rx="315" ry="82" transform="rotate(-12 350 125)" />
+            <ellipse cx="350" cy="125" rx="280" ry="105" transform="rotate(22 350 125)" />
+            <path d="M0 125H700M350 0V250" class="trajectory-cross"/>
+            <circle cx="350" cy="125" r="4"/>
+            <circle cx="98" cy="73" r="4" class="small-star"/>
+            <circle cx="594" cy="176" r="4" class="small-star"/>
+          </svg>
+        </div>
+        <h2>The trajectory<br><i>remains open.</i></h2>
+        <p>NO FINAL OBSERVATION HAS BEEN MADE.</p>
+        <div class="trajectory-bottom mono"><span>NATALIE × OLIVER</span><span>END OF CURRENT RECORD / TO BE CONTINUED</span></div>
+      </section>
+    </main>
+
+    <footer class="footer mono">
+      <span>O/A — ARCHIVE</span>
+      <span>"If I loved you less, I might be able to talk about it more." — Jane Austen, Emma</span>
+      <a href="#top">BACK TO ORIGIN ↑</a>
+    </footer>
+  </div>
+
+  <div class="modal-backdrop" id="modal-backdrop" hidden>
+    <article class="checkpoint-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" aria-label="Close checkpoint">×</button>
+      <p class="eyebrow mono" id="modal-kicker">OBSERVATION / 001</p>
+      <h2 id="modal-title">Initial conditions.</h2>
+      <p class="modal-date mono" id="modal-date"></p>
+      <div class="modal-rule"></div>
+      <p class="modal-description" id="modal-description"></p>
+      <p class="modal-caption mono" id="modal-caption"></p>
+    </article>
+  </div>
+
+  <div class="tooltip" id="tooltip" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
